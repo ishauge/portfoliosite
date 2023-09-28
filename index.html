@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(1, 1, 55);
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:80px;
+    background-color:rgb(14, 14, 120);
+}
+nav ul{
+    justify-content: center;  
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0  23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color:rgb(86, 86, 180);
+    font-size: 1.04rem;
+    
+}
+.left{
+    font-size: larger;
+
+}
+.firstsection {
+    justify-content: space-around;
+    display: flex;
+    
+    margin: 80px 0;
+}
+.firstsection > div{
+    width:30%;
+    align-items: center;
+}
+.leftsection{
+    
+    font-size: 3rem;
+    
+     
+}
+.btn{
+    
+    background-color: #0e0e1a;
+    color: white;
+    border:2px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor:pointer;
+    padding: 12px 12px;
+     
+}
+.btn:hover{
+    color:grey;
+
+}
+.rightsection img{
+    width: 100%;
+    margin: -83px 0;
+   
+    
+     
+}
+.purple{
+    color: rgb(136, 67, 200);
+
+}
+#element{
+    color: rgb(136, 67, 200);
+}
+footer{
+    background-color: #0e0e1a;
+    
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+
+}
+.footer ul{
+    list-style: none;
+}
+.footer div{
+
+    width: 223px;
+
+}
+footer.footer-right{
+    text-align: center;
+    color: gray;
+    padding: 12px 12px ;
+     
+}
+  
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <div class="divleft">Isha's Portfolio</div>
+        <div class="divright">
+            <ul>
+                  <li><a href="Ishaportfolio.com  ">Home</a></li>
+                  <li><a onclick="opengithubLink()" href="#">about</a></li>
+                  <li><a  href="comingsoon.html">services</a></li>
+                  <li><a  href="comingsoon.html">projects</a></li>
+                  <li><a onclick="opengithubLink()" href="#">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+   </header> 
+   <main>
+    <section class="firstsection">
+    <div class="leftsection">
+     hello everyone!
+      <span class="purple ">Isha</span> here
+     I am passionate 
+     <span id="element"></span>
+     <div class="button">
+        <button onclick="openlinkedlinLink()" class="btn">Visit likedin</button>
+        <button onclick="opengithubLink()" class="btn">Visit Github</button>
+    </div>
+
+
+    </div>
+    
+    <div class="rightsection">
+        <img src="me.png" width="20px" alt="">
+    </div>
+    </section>
+   </main> 
+   <footer>
+    <div class="footer">
+        <div class="footerfirst">
+            <h2>Ishaportfolio's Developer Portfolio</h2>
+            <p>Welcome to my developer portfolio. I am a passionate web developer .</p>
+        </div>
+        <div class="footersecond">
+            <h3>Navigation</h3>
+            <ul>
+            
+                  <li><a href="Ishaportfolio.com  ">Home</a></li>
+                  <li><a onclick="opengithubLink()" href="#">about</a></li>
+                  <li><a  href="comingsoon.html">services</a></li>
+                  <li><a  href="comingsoon.html">projects</a></li>
+                  <li><a onclick="opengithubLink()" href="#">contact </a></li>
+                  
+            </ul>
+        </div>
+        <div class="footerthird">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="https://github.com/ishauge">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/isha-uge-0b399b221/">LinkedIn</a></li>
+                <li><a href="Ishaportfolio.com ">Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="footerfour">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: ishauge1230@gmail.com</li>
+                <li>Phone: 8530302881</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-rights" >
+        &#169 Copyright's Ishaportfolio.com | All rights reserved 
+
+    </div>
+   </footer>
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+   <script>
+    var typed = new Typed('#element', {
+      strings: ['Web  Developer ', 'Website designer'],
+      typeSpeed: 50,
+    });
+    function opengithubLink() {
+    window.open("https://github.com/ishauge");
+    }
+    function openlinkedlinLink(){
+    window.open("https://github.com/ishauge");
+    }
+
+  </script>
+</body>
+</html>
